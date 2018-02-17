@@ -1,0 +1,21 @@
+
+#include <iostream>
+using namespace std;
+
+int sequenceSum(int start, int end, int step){
+if(start > end){
+   return 0;
+}
+else{
+int summe=0;
+for(int i =start; i <= end; i=i+step){
+    summe = summe + i;
+    }
+  return summe;
+  }
+}
+
+int main(){
+    
+    cout << sequenceSum(2,2,2);
+}
